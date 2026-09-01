@@ -21,6 +21,18 @@
       "url": "https://api.githubcopilot.com/mcp",
       "auth": "oauth",
       "protocolVersion": "auto"
+    },
+    "zai-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@z_ai/mcp-server"
+      ],
+      "env": {
+        "Z_AI_API_KEY": "YOUR_Z_AI_API_KEY_HERE",
+        "Z_AI_MODE": "ZAI"
+      }
     }
   }
 }

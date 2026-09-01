@@ -1,6 +1,7 @@
 # Credenciales y decisiones locales
 auth.json
 trust.json
+mcp.json
 
 # Estado, sesiones y cachés regenerables
 sessions/
@@ -18,3 +19,4 @@ git/
 # Archivos locales
 .DS_Store
 *.log
+mcp-npx-cache.json
