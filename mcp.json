@@ -8,6 +8,19 @@
       "command": "/opt/homebrew/bin/engram",
       "directTools": false,
       "lifecycle": "lazy"
+    },
+    "deepwiki": {
+      "url": "https://mcp.deepwiki.com/mcp",
+      "protocolVersion": "auto"
+    },
+    "context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "protocolVersion": "auto"
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp",
+      "auth": "oauth",
+      "protocolVersion": "auto"
     }
   }
 }
