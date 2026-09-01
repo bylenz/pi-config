@@ -1,0 +1,20 @@
+# Credenciales y decisiones locales
+auth.json
+trust.json
+
+# Estado, sesiones y cachés regenerables
+sessions/
+profiles/
+missions/
+run-history.jsonl
+models-store.json
+mcp-cache.json
+mcp-onboarding.json
+
+# Paquetes instalados: settings.json declara cómo restaurarlos
+npm/
+git/
+
+# Archivos locales
+.DS_Store
+*.log
