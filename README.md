@@ -15,7 +15,22 @@ Backup portable de `~/.pi/agent`. El repositorio es privado: **aun así no conti
   - **Delegate exploration**: conserva contexto delegando exploración dirigida.
   - **Diagnose, don't fix**: investiga y propone, sin modificar código.
 
-`settings.json` es la fuente de verdad de los paquetes instalados (MCP adapter, web access, ponytail, preguntas, subagentes, Engram, todo, imágenes y medidores de uso). No se guardan sus copias descargadas.
+## Paquetes gestionados
+
+`settings.json` es la fuente de verdad: Pi instala los paquetes desde sus orígenes. `npm/package.json` y `npm/package-lock.json` son estado generado por esa instalación, por eso no se versionan.
+
+| Paquete | Uso |
+| --- | --- |
+| `pi-mcp-adapter` | Carga `mcp.json` y conecta los servidores MCP. |
+| `pi-web-access` | Búsqueda web y lectura de contenido remoto. |
+| `ponytail` (Git) | Prioriza soluciones mínimas y evita sobreingeniería. |
+| `rpiv-ask-user-question` | Preguntas estructuradas al usuario. |
+| `pi-subagents` | Delegación y coordinación de subagentes. |
+| `gentle-engram` | Memoria persistente entre sesiones. |
+| `rpiv-todo` | Lista de tareas de Pi. |
+| `pi-image-tools` | Herramientas de imágenes. |
+| `pi-usage-meters` | Indicadores de uso y coste. |
+
 
 ## Restaurar en otra máquina
 
