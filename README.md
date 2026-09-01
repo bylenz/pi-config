@@ -46,6 +46,16 @@ Los proporciona `pi-subagents` y están disponibles de inmediato:
 
 Regla práctica: `scout` antes de entender el código, `researcher` antes de confiar en hechos externos, `worker` para implementar, `reviewer` para comprobar y `oracle` cuando la decisión en sí parece arriesgada.
 
+### Flujo: planificar → validar → delegar en paralelo
+
+1. **Investigar** — «Usa el subagente `researcher` para investigar X y darme un informe breve con fuentes.»
+2. **Planificar** — «Con ese informe, propón un plan de implementación."
+3. **Validar el plan** — «Pide al `oracle` una segunda opinión sobre este plan: riesgos, supuestos dudosos y qué falta.» → ajusta el plan según el veredicto.
+4. **Delegar en paralelo** — «Ejecuta el plan: lanza varios `worker` en paralelo con `runs.all`, uno por tarea independiente del plan."
+5. **Revisar** — «Pasa al `reviewer` el diff completo contra el plan: tests, casos límite y simplicidad.»
+
+> Combina con los snippets: `orchestrator-mode` (prepend) para que la sesión no lea código ella misma, y `delegate-exploration` (append) al pedir la exploración previa.
+
 ## Análisis de imágenes con zai MCP server
 
 ### Español
